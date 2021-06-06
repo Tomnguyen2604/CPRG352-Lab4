@@ -53,7 +53,7 @@ public class NoteServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String title = request.getParameter("titleIntput");
+        String title = request.getParameter("titleInput");
         String description = request.getParameter("descriptionInput");
         Note note = new Note(title, description);
         note.setTitle(title);
